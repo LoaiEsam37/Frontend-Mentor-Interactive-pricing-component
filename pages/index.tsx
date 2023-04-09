@@ -15,10 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
       </Head>
-      
+
       <main className={styles.main}>
 
-        <h1>Simple, traffic-based pricing</h1>
+        <h1 className={styles.heading} >Simple, traffic-based pricing</h1>
         <p>
         Sign-up for our 30-day trial. No credit card required. 
         </p>
@@ -28,20 +28,18 @@ export default function Home() {
           <div className={styles.row}>
             <p>100k Pageviews</p>
             <p>
-              <span>${price}</span>
+              <span className={styles.price} >${price}.00</span>
               /month
             </p>
           </div>
 
           <div className={styles.row}>
-            <input type="range" onChange={(e) => setPrice(Number(e.target.value))}/>
+            <input className={styles.rangeInput} type="range" onChange={(e) => setPrice(Number(e.target.value))}/>
           </div>
 
           <div className={styles.row}>
             <input type="checkbox" />
           </div>
-
-          <hr />
 
           <div className={styles.row}>
           <div className={styles.column}>

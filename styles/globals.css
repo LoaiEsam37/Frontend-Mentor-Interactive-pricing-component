@@ -5,7 +5,19 @@ body {
   min-height: 100vh;
   font-size: 15px;
   font-family: Manrope, sans-serif;
-  background-color: #f1f5fe;
   display: flex;
   justify-content: center;
+  background-color: #f9faff;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-image: url(../public/bg-pattern.svg);
+  z-index: -1;
+  border-radius: 0 0 0 150px;
 }
