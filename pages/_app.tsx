@@ -1,10 +1,6 @@
-import "@fortawesome/fontawesome-svg-core/styles.css"; 
-import { config } from "@fortawesome/fontawesome-svg-core";
-import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
-
-config.autoAddCss = false; 
+import "./globals.css";
+import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
